@@ -15,7 +15,7 @@
 
 ## Project Overview
 
-Built an a call analysis pipeline that processes raw audio, transcribes speech, and applies multiple layers of natural language and behavioral analysis to extract meaningful insights from sales conversations.
+Built a call analysis pipeline that processes raw audio, transcribes speech, and applies multiple layers of natural language and behavioral analysis to extract meaningful insights from sales conversations.
 
 The pipeline begins with audio preprocessing using **pydub** and **ffmpeg**, ensuring the input is normalized to a consistent format suitable for transcription. Once preprocessed, the audio is passed through a transcription and diarization step to separate speakers and align their contributions. From there, I implemented the `CallAnalyzer` class, which performs various analyses: calculating **talk time ratios** between the sales representative and customer, estimating **speech pace** (words per minute), and detecting **interruptions** and **pauses** that signal conversational dynamics.
 
